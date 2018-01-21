@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name         = 'quotes'
+  s.name         = 'quotes-rest'
   s.version      = '0.1'
   s.date         = '2018-01-21'
   s.summary      = "http://quotes.rest"
