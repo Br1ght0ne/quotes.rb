@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'quotes'
+require 'thor'
+
+class Qod < Thor
+  desc 'qod [-a]', 'Get quote of the day'
+  method_option :author, :aliases => '-a', :desc => 'Print author'
+  def qod
+    puts Quotes.qod(author: options[:author])
+  end
+end
+
+Qod.start
